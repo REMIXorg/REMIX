@@ -1,0 +1,22 @@
+[Unit]
+Description=Remix's distributed currency daemon
+After=network.target
+
+[Service]
+User=remixcore
+Group=remixcore
+
+Type=forking
+PIDFile=/var/lib/remixd/remixd.pid
+ExecStart=/usr/bin/remixd -daemon -pid=/var/lib/remixd/remixd.pid \
+-conf=/etc/remixcore/remix.conf -datadir=/var/lib/remixd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

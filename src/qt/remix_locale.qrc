@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/remix_bg.qm</file>
+        <file alias="de">locale/remix_de.qm</file>
+        <file alias="en">locale/remix_en.qm</file>
+        <file alias="es">locale/remix_es.qm</file>
+        <file alias="fi">locale/remix_fi.qm</file>
+        <file alias="fr">locale/remix_fr.qm</file>
+        <file alias="it">locale/remix_it.qm</file>
+        <file alias="ja">locale/remix_ja.qm</file>
+        <file alias="pl">locale/remix_pl.qm</file>
+        <file alias="pt">locale/remix_pt.qm</file>
+        <file alias="ru">locale/remix_ru.qm</file>
+        <file alias="sk">locale/remix_sk.qm</file>
+        <file alias="sv">locale/remix_sv.qm</file>
+        <file alias="vi">locale/remix_vi.qm</file>
+        <file alias="zh_CN">locale/remix_zh_CN.qm</file>
+        <file alias="zh_TW">locale/remix_zh_TW.qm</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,68 @@
+Source: remix
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@remixcoin.info>
+Uploaders: Holger Schinzel <holger@remixcoin.info>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ libssl-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-system1.48-dev | libboost-system-dev (>> 1.35),
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.35),
+ libboost-program-options1.48-dev | libboost-program-options-dev (>> 1.35),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.35),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.35),
+ libboost-chrono1.48-dev | libboost-chrono-dev (>> 1.35),
+ qt4-qmake,
+ libqt4-dev,
+ libqrencode-dev,
+ libprotobuf-dev, protobuf-compiler,
+ python
+Standards-Version: 3.9.2
+Homepage: https://remix.io/
+Vcs-Git: git://github.com/REMIXorg/REMIX.git
+Vcs-Browser: https://github.com/REMIXorg/REMIX
+
+Package: remixd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ Remix is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Remix uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Remix Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, remixd, and the CLI tool
+ remix-cli to interact with the daemon.
+
+Package: remix-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ Remix is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Remix uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Remix Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides Remix-Qt, a GUI for Remix based on Qt.
+
+Package: remix-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ Remix is an experimental new digital currency that enables anonymous, instant
+ payments to anyone, anywhere in the world. Remix uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. Remix Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides remix-tx, a command-line transaction creation
+ tool which can be used without a remix daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

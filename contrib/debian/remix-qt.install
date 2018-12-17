@@ -1,0 +1,6 @@
+usr/local/bin/remix-qt usr/bin
+share/pixmaps/remix32.xpm usr/share/pixmaps
+share/pixmaps/remix16.xpm usr/share/pixmaps
+share/pixmaps/remix128.png usr/share/pixmaps
+debian/remix-qt.desktop usr/share/applications
+debian/remix-qt.protocol usr/share/kde4/services/
